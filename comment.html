@@ -1,0 +1,92 @@
+<html>
+<head>
+<title> wonders of the world </title>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #6500EE;
+  color: white;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width:100%;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+<div class="topnav">
+  <a class="active" href="seven wonders of the world.html">Home</a>
+  <a href="colosseum.html">Colosseum</a>
+  <a href="Great Wall of China.html">Great Wall of China</a>
+  <a href="Taj Mahal.html">Taj Mahal</a>
+  <a href="Christ the Redeemer.html">Christ the Redeemer</a>
+  <a href="Machu Picchu.html">Machu Picchu</a>
+  <a href="Chichén Itzá.html">Chichén Itzá</a>
+  <a href="Petra.html"> Petra</a>
+  <a class="active" href="comment.html"> comment</a>
+</div>
+<div class="container">
+  <img src="jesus.jpg" alt="jesus" style="width:100%;height:100%;">
+  <div class="content">
+    <h1>Comment</h1>
+    <form method='post'>
+    comment:<br/>
+    <textarea name='comment'id='comment'>
+    </textarea><br/>
+    <input type='hidden'name='articleid'
+    id='articleid'value='<? echo $_GET ["id"];?>'/>
+    <input type='submit' value='post'/>
+    </form>
+  </div>
+</div>
+</body>
+</html>
